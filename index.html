@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Heavy SEO Meta Tags -->
+    <meta name="description" content="Soapy Solutions is Montreal's premier mobile car detailing service. We specialize in luxury paint correction, ceramic coatings, and interior deep cleans in Montreal, Dorval, and Vaudreuil.">
+    <meta name="keywords" content="mobile car detailing Montreal, auto detailing Dorval, ceramic coating Vaudreuil, paint correction West Island, luxury car wash, McLaren detailing, Soapy Solutions, car interior steam cleaning">
+    <meta name="author" content="Soapy Solutions">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Soapy Solutions | Premium Mobile Car Detailing Montreal">
+    <meta property="og:description" content="Where every detail counts. We bring ultra high-end detailing, paint correction, and ceramic coatings directly to your driveway.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.soapysolutions.com">
+    <meta property="og:image" content="https://placehold.co/1200x630/111C2E/F25C05?text=Soapy+Solutions+Detailing">
+    
+    <!-- Geo & Local SEO Tags -->
+    <meta name="geo.region" content="CA-QC" />
+    <meta name="geo.placename" content="Dorval" />
+    <meta name="geo.position" content="45.4415;-73.7431" />
+    <meta name="ICBM" content="45.4415, -73.7431" />
+    
+    <title>Soapy Solutions | Premium Mobile Car Detailing & Ceramic Coatings Montreal</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Advanced Schema.org LocalBusiness JSON-LD for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoBodyShop",
+      "name": "Soapy Solutions",
+      "url": "https://www.soapysolutions.com",
+      "telephone": "+14385223788",
+      "email": "info.soapysolutions@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "565 Marshall Avenue",
+        "postalCode": "H9S 5W4",
+        "addressLocality": "Dorval",
+        "addressRegion": "QC",
+        "addressCountry": "CA"
+      },
+      "areaServed": [
+        {"@type": "City", "name": "Montreal"},
+        {"@type": "City", "name": "Vaudreuil-Dorion"},
+        {"@type": "City", "name": "Dorval"},
+        {"@type": "City", "name": "West Island"}
+      ],
+      "priceRange": "$$$",
+      "description": "Premium Mobile Car Detailing Service specializing in paint correction, ceramic coatings, and interior restoration. Official mobile detailers of McLaren Montreal.",
+      "sameAs": [
+        "https://instagram.com/soapysolutionsmtl",
+        "https://www.tiktok.com/@soapysolutions24"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "42"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Auto Detailing Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ceramic Coating",
+              "description": "Nano-ceramic protection for vehicle paint, providing hydrophobic properties and UV resistance."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Paint Correction",
+              "description": "Multi-stage machine polishing to remove swirl marks, scratches, and oxidation from clear coat."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Interior Deep Clean",
+              "description": "Steam cleaning, hot water extraction, and leather conditioning for automotive interiors."
+            }
+          }
+        ]
+      }
+    }
+    </script>
+
+    <style>
+        /* CSS Variables for Brand Colors */
+        :root {
+            --bg-color: #0B1320; 
+            --surface-color: #111C2E;
+            --surface-alt: #16243A;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-main: #F25C05; 
+            --accent-main-hover: #ff7a29;
+            --accent-secondary: #38bdf8; 
+            --border-color: #1e293b;
+            --nav-bg: rgba(11, 19, 32, 0.95);
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+            --mclaren-orange: #FF7B00;
+        }
+
+        [data-theme="light"] {
+            --bg-color: #ffffff;
+            --surface-color: #f1f5f9;
+            --surface-alt: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --accent-main: #E64A00; 
+            --accent-main-hover: #cc4200;
+            --accent-secondary: #0284c7;
+            --border-color: #cbd5e1;
+            --nav-bg: rgba(255, 255, 255, 0.98);
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Reset & Base Setup */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            text-transform: uppercase;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Utility Classes */
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-padding {
+            padding: 6rem 0;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .accent-text {
+            color: var(--accent-main);
+        }
+        
+        .secondary-text {
+            color: var(--accent-secondary);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -10px;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background-color: var(--accent-main);
+        }
+
+        .left-title::after {
+            left: 0;
+            transform: none;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 1rem 2.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            letter-spacing: 1px;
+            border: none;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-main);
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-main-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(242, 92, 5, 0.4);
+        }
+
+        .btn-massive {
+            font-size: 1.1rem;
+            padding: 1.2rem 3rem;
+            background-color: var(--accent-secondary);
+            color: #fff;
+        }
+        
+        .btn-massive:hover {
+            background-color: var(--text-main);
+            color: var(--bg-color);
+            transform: translateY(-2px);
+        }
+
+        /* Navbar */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--nav-bg);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-color);
+            transition: all 0.3s;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 90px;
+        }
+
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 900;
+            letter-spacing: -1px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .logo-soapy { color: var(--accent-main); }
+        .logo-solutions { color: var(--text-main); }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .nav-links a.nav-item {
+            font-weight: 600;
+            font-size: 0.90rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a.nav-item:hover { color: var(--accent-main); }
+
+        /* Menu Toggles */
+        .menu-toggles {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            margin-left: 0.5rem;
+            border-left: 1px solid var(--border-color);
+            padding-left: 1.5rem;
+        }
+
+        .toggle-btn {
+            background: none;
+            border: none;
+            color: var(--text-main);
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .toggle-btn:hover { color: var(--accent-secondary); }
+
+        .lang-toggle {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .mobile-only-btn { display: none; }
+        .mobile-menu-btn {
+            display: none;
+            font-size: 1.8rem;
+            background: none;
+            border: none;
+            color: var(--text-main);
+            cursor: pointer;
+        }
+
+        /* Hero Section (FIXED: Uses min-height & padding instead of rigid 100vh) */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            /* Extra top padding prevents header overlap. Bottom padding prevents cutoff on weird aspect ratios */
+            padding-top: 140px; 
+            padding-bottom: 80px; 
+            background: linear-gradient(rgba(11, 19, 32, 0.88), rgba(11, 19, 32, 0.95)), url('https://placehold.co/1920x1080/111C2E/38bdf8?text=Premium+Detailing') center/cover no-repeat;
+        }
+
+        [data-theme="light"] .hero {
+            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.95)), url('https://placehold.co/1920x1080/f1f5f9/0284c7?text=Premium+Detailing') center/cover no-repeat;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .mclaren-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: rgba(255, 123, 0, 0.1); 
+            border: 1px solid var(--mclaren-orange);
+            color: var(--text-main);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .mclaren-badge i { color: var(--mclaren-orange); }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero h2 {
+            font-size: 1.8rem;
+            color: var(--accent-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+        }
+
+        /* Trust Bar */
+        .trust-bar {
+            background-color: var(--surface-color);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 2rem 0;
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .trust-item i {
+            font-size: 2.5rem;
+            color: var(--accent-main);
+            margin-bottom: 1rem;
+        }
+
+        .trust-item h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Detailed Services Section */
+        .services { background-color: var(--bg-color); }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .service-card {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            padding: 3rem 2rem;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: var(--accent-secondary);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow);
+        }
+
+        .service-card:hover::before { transform: scaleX(1); }
+
+        .service-icon-wrap {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-icon-wrap i {
+            font-size: 3rem;
+            color: var(--accent-main);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .service-card p {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .service-features {
+            margin-top: auto;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1.5rem;
+        }
+
+        .service-features li {
+            position: relative;
+            padding-left: 1.8rem;
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+            color: var(--text-main);
+        }
+
+        .service-features li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: var(--accent-secondary);
+        }
+
+        /* Packages / Pricing Section */
+        .packages {
+            background-color: var(--surface-alt);
+        }
+
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .package-card {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .package-card.popular {
+            border-color: var(--accent-main);
+            box-shadow: var(--shadow);
+            transform: scale(1.02);
+            z-index: 2;
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--accent-main);
+            color: #fff;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .package-name {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent-secondary);
+        }
+
+        .package-price {
+            font-size: 2.5rem;
+            font-weight: 900;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1.5rem;
+        }
+
+        .package-price span {
+            font-size: 1rem;
+            font-weight: normal;
+            color: var(--text-muted);
+        }
+
+        .package-list {
+            margin-bottom: 2rem;
+            flex-grow: 1;
+        }
+
+        .package-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--text-muted);
+        }
+
+        .package-list li::before {
+            content: '\f058'; /* Check circle */
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: var(--accent-main);
+        }
+
+        /* FAQ Section */
+        .faq {
+            background-color: var(--bg-color);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            width: 100%;
+            text-align: left;
+            padding: 1.5rem;
+            background: none;
+            border: none;
+            color: var(--text-main);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: color 0.3s;
+        }
+
+        .faq-question:hover {
+            color: var(--accent-secondary);
+        }
+
+        .faq-question i {
+            color: var(--accent-main);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+            background-color: var(--bg-color);
+        }
+
+        .faq-answer-inner {
+            padding: 0 1.5rem 1.5rem 1.5rem;
+            color: var(--text-muted);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px; /* Arbitrary large height to let text expand */
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        /* Portfolio / Gallery */
+        .portfolio { background-color: var(--surface-alt); }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            aspect-ratio: 3/2;
+            background-color: var(--bg-color);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(11, 19, 32, 0.85);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .gallery-item:hover img { transform: scale(1.05); }
+        .gallery-item:hover .gallery-overlay { opacity: 1; }
+        .gallery-overlay h4 {
+            color: #fff;
+            margin: 0;
+            transform: translateY(20px);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover .gallery-overlay h4 { transform: translateY(0); }
+
+        /* Testimonials Section */
+        .testimonials { background-color: var(--bg-color); }
+        .reviews-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .review-card {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            padding: 2rem;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .review-stars {
+            color: #FFD700;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        .review-text {
+            font-style: italic;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+        .review-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1rem;
+        }
+        .author-avatar {
+            width: 40px;
+            height: 40px;
+            background-color: var(--accent-secondary);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* SEO Content Section */
+        .seo-content {
+            background-color: var(--surface-alt);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+        .seo-text-block {
+            max-width: 900px;
+            margin: 0 auto;
+            color: var(--text-muted);
+        }
+        .seo-text-block p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+        .seo-text-block strong { color: var(--text-main); }
+
+        /* Contact Section */
+        .contact { background-color: var(--bg-color); }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+        .contact-form {
+            background-color: var(--surface-color);
+            padding: 3rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+        }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .form-control {
+            width: 100%;
+            padding: 1rem;
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            border-radius: 4px;
+            font-family: 'Inter', sans-serif;
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-secondary);
+        }
+        textarea.form-control {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .contact-info-block {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .contact-info-block i {
+            color: var(--accent-main);
+            font-size: 1.5rem;
+            margin-top: 5px;
+        }
+        .contact-info-content h4 {
+            margin-bottom: 0.2rem;
+            font-size: 1.1rem;
+        }
+        .contact-info-content p, .contact-info-content a {
+            color: var(--text-muted);
+            transition: color 0.3s;
+        }
+        .contact-info-content a:hover { color: var(--accent-secondary); }
+
+        /* Footer */
+        footer {
+            background-color: #050a12; 
+            color: #fff;
+            padding: 4rem 0 2rem;
+            border-top: 4px solid var(--accent-main);
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        .footer-text {
+            color: #94a3b8;
+            max-width: 400px;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+        }
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: #1e293b;
+            border-radius: 50%;
+            color: #fff;
+            transition: all 0.3s;
+        }
+        .social-icons a:hover {
+            background-color: var(--accent-main);
+            transform: translateY(-3px);
+        }
+        .footer-links h4 {
+            color: #fff;
+            margin-bottom: 1.5rem;
+        }
+        .footer-links ul li { margin-bottom: 0.8rem; }
+        .footer-links ul li a {
+            color: #94a3b8;
+            transition: color 0.3s;
+        }
+        .footer-links ul li a:hover { color: var(--accent-secondary); }
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #1e293b;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero h1 { font-size: 3.5rem; }
+            .trust-grid { grid-template-columns: repeat(2, 1fr); }
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .packages-grid { grid-template-columns: 1fr; max-width: 600px; margin: 2rem auto; }
+            .package-card.popular { transform: none; }
+            .contact-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            .desktop-cta { display: none; }
+            .mobile-menu-btn { display: block; }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 90px;
+                left: 0;
+                width: 100%;
+                background-color: var(--nav-bg);
+                padding: 2rem;
+                border-bottom: 1px solid var(--border-color);
+                box-shadow: var(--shadow);
+                text-align: center;
+                gap: 1.5rem;
+            }
+            .nav-links.active { display: flex; }
+
+            .menu-toggles {
+                margin-left: 0;
+                border-left: none;
+                padding-left: 0;
+                padding-top: 1.5rem;
+                border-top: 1px solid var(--border-color);
+                width: 100%;
+                justify-content: center;
+            }
+
+            .mobile-only-btn {
+                display: inline-flex;
+                width: 100%;
+                margin-top: 1rem;
+            }
+
+            /* Adjust Hero for smaller heights/widths on mobile */
+            .hero {
+                padding-top: 120px;
+                padding-bottom: 60px;
+                min-height: auto; /* Let content dictate height on small screens */
+            }
+
+            .hero h1 { font-size: 2.5rem; }
+            .hero h2 { font-size: 1.4rem; }
+            .services-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+            
+            .contact-info-block {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 2.2rem; }
+            .trust-grid { grid-template-columns: 1fr; }
+            .mclaren-badge { font-size: 0.8rem; flex-direction: column; text-align: center;}
+        }
+    </style>
+</head>
+<body data-theme="dark">
+
+    <!-- Header / Navbar -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo smooth-scroll">
+                <span class="logo-soapy">SOAPY</span><span class="logo-solutions">SOLUTIONS</span>
+            </a>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="nav-item smooth-scroll" data-i18n="nav_home">Home</a>
+                <a href="#services" class="nav-item smooth-scroll" data-i18n="nav_services">Services</a>
+                <a href="#packages" class="nav-item smooth-scroll" data-i18n="nav_packages">Packages</a>
+                <a href="#portfolio" class="nav-item smooth-scroll" data-i18n="nav_portfolio">Portfolio</a>
+                <a href="#faq" class="nav-item smooth-scroll" data-i18n="nav_faq">FAQ</a>
+                
+                <div class="menu-toggles">
+                    <button class="toggle-btn" id="themeToggle" aria-label="Toggle Theme">
+                        <i class="fas fa-sun" id="themeIcon"></i>
+                    </button>
+                    <button class="toggle-btn lang-toggle" id="langToggle" aria-label="Toggle Language">
+                        FR
+                    </button>
+                </div>
+
+                <a href="#contact" class="btn btn-primary mobile-only-btn smooth-scroll" data-i18n="btn_call"><i class="fas fa-phone"></i> CALL NOW</a>
+            </nav>
+
+            <div class="desktop-cta">
+                <a href="#contact" class="btn btn-primary smooth-scroll" data-i18n="btn_call"><i class="fas fa-phone"></i> CALL NOW</a>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="mclaren-badge">
+                    <i class="fa-solid fa-flag-checkered"></i>
+                    <span data-i18n="hero_badge">Official Mobile Detailers of McLaren Montreal</span>
+                </div>
+                <h1 data-i18n="hero_title">WHERE EVERY DETAIL <br><span class="accent-text">COUNTS.</span></h1>
+                <h2 data-i18n="hero_subtitle">Montreal Mobile Car Detailing Service</h2>
+                <p data-i18n="hero_desc">Specializing in multi-stage paint corrections, professional ceramic coatings, and ultra high-end mobile detailing brought directly to your driveway.</p>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <a href="#contact" class="btn btn-massive smooth-scroll" data-i18n="btn_quote">BOOK NOW</a>
+                    <a href="#packages" class="btn btn-primary smooth-scroll" style="background: transparent; border: 2px solid var(--text-main); color: var(--text-main);" data-i18n="btn_work">VIEW PACKAGES</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <i class="fas fa-spray-can-sparkles"></i>
+                    <h4 data-i18n="trust_paint">Paint Correction</h4>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-shield-halved"></i>
+                    <h4 data-i18n="trust_ceramic">Ceramic Coatings</h4>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-star"></i>
+                    <h4 data-i18n="trust_rated">5-Star Rated</h4>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-car-side"></i>
+                    <h4 data-i18n="trust_mobile">Mobile Service</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Services Section -->
+    <section class="services section-padding" id="services">
+        <div class="container text-center">
+            <h2 class="section-title" data-i18n="sec_services">Our Premium Detailing Services</h2>
+            <p class="section-subtitle" data-i18n="sec_services_sub">We offer specialized, high-end automotive care packages designed to restore, protect, and maintain your vehicle's value using industry-leading products.</p>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon-wrap"><i class="fas fa-shield-virus"></i></div>
+                    <h3 data-i18n="srv_1_title">Ceramic Coating Protection</h3>
+                    <p data-i18n="srv_1_desc">A semi-permanent layer of nano-ceramic quartz that bonds to your clear coat. It provides an extreme hydrophobic effect, unmatched gloss, and defense against Montreal's harsh elements.</p>
+                    <ul class="service-features">
+                        <li data-i18n="srv_1_f1">Multi-year 9H hardness protection</li>
+                        <li data-i18n="srv_1_f2">Extreme water & dirt repellency</li>
+                        <li data-i18n="srv_1_f3">Protection against UV rays & oxidation</li>
+                        <li data-i18n="srv_1_f4">Deep, mirror-like candy gloss finish</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon-wrap"><i class="fas fa-wand-magic-sparkles"></i></div>
+                    <h3 data-i18n="srv_2_title">Multi-Stage Paint Correction</h3>
+                    <p data-i18n="srv_2_desc">Erase years of automatic car wash damage. Our meticulous compounding and polishing process safely removes defects from your clear coat to reveal a flawless finish.</p>
+                    <ul class="service-features">
+                        <li data-i18n="srv_2_f1">Removal of swirl marks & holograms</li>
+                        <li data-i18n="srv_2_f2">Elimination of light to medium scratches</li>
+                        <li data-i18n="srv_2_f3">Restoration of faded or oxidized paint</li>
+                        <li data-i18n="srv_2_f4">Machine compounding and jewel polishing</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon-wrap"><i class="fas fa-couch"></i></div>
+                    <h3 data-i18n="srv_3_title">Interior Deep Restoration</h3>
+                    <p data-i18n="srv_3_desc">A complete reset for your cabin. We go far beyond standard vacuuming by utilizing commercial-grade steam cleaners and extractors to sanitize every crevice.</p>
+                    <ul class="service-features">
+                        <li data-i18n="srv_3_f1">Hot water carpet & seat extraction</li>
+                        <li data-i18n="srv_3_f2">High-pressure steam cleaning & sanitization</li>
+                        <li data-i18n="srv_3_f3">Premium leather deep cleaning & conditioning</li>
+                        <li data-i18n="srv_3_f4">Odor neutralization and stain removal</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages / Pricing -->
+    <section class="packages section-padding" id="packages">
+        <div class="container text-center">
+            <h2 class="section-title" data-i18n="sec_packages">Detailing Packages</h2>
+            <p class="section-subtitle" data-i18n="sec_packages_sub">Transparent pricing for premium services. Contact us for a precise quote based on your vehicle's size and condition.</p>
+            
+            <div class="packages-grid">
+                <!-- Tier 1 -->
+                <div class="package-card">
+                    <h3 class="package-name" data-i18n="pkg_1_name">Maintenance Wash</h3>
+                    <div class="package-price" data-i18n="pkg_1_price">From $150</div>
+                    <ul class="package-list text-left" style="text-align: left;">
+                        <li data-i18n="pkg_1_f1">Foam cannon hand wash</li>
+                        <li data-i18n="pkg_1_f2">Wheel & tire deep clean</li>
+                        <li data-i18n="pkg_1_f3">Spray wax application</li>
+                        <li data-i18n="pkg_1_f4">Interior thorough vacuum</li>
+                        <li data-i18n="pkg_1_f5">Wipe down of all surfaces</li>
+                        <li data-i18n="pkg_1_f6">Streak-free window cleaning</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary smooth-scroll" style="width: 100%; background-color: var(--surface-alt); border: 1px solid var(--border-color); color: var(--text-main);" data-i18n="btn_book_pkg">Book Now</a>
+                </div>
+                
+                <!-- Tier 2 -->
+                <div class="package-card popular">
+                    <div class="popular-badge" data-i18n="pkg_pop">Most Popular</div>
+                    <h3 class="package-name" data-i18n="pkg_2_name">Signature Detail</h3>
+                    <div class="package-price" data-i18n="pkg_2_price">From $350</div>
+                    <ul class="package-list text-left" style="text-align: left;">
+                        <li data-i18n="pkg_2_f1">Everything in Maintenance Wash</li>
+                        <li data-i18n="pkg_2_f2">Chemical iron decontamination</li>
+                        <li data-i18n="pkg_2_f3">Clay bar paint treatment</li>
+                        <li data-i18n="pkg_2_f4">6-Month Paint Sealant</li>
+                        <li data-i18n="pkg_2_f5">Interior deep steam clean</li>
+                        <li data-i18n="pkg_2_f6">Leather/Fabric conditioning</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary smooth-scroll" style="width: 100%;" data-i18n="btn_book_pkg">Book Now</a>
+                </div>
+
+                <!-- Tier 3 -->
+                <div class="package-card">
+                    <h3 class="package-name" data-i18n="pkg_3_name">Showroom Reset</h3>
+                    <div class="package-price" data-i18n="pkg_3_price">From $850</div>
+                    <ul class="package-list text-left" style="text-align: left;">
+                        <li data-i18n="pkg_3_f1">Full exterior decontamination</li>
+                        <li data-i18n="pkg_3_f2">1-Step Paint Correction (Gloss enhancement)</li>
+                        <li data-i18n="pkg_3_f3">Professional Ceramic Coating (2+ Years)</li>
+                        <li data-i18n="pkg_3_f4">Wheel face ceramic coating</li>
+                        <li data-i18n="pkg_3_f5">Complete interior detail</li>
+                        <li data-i18n="pkg_3_f6">Engine bay light detail</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary smooth-scroll" style="width: 100%; background-color: var(--surface-alt); border: 1px solid var(--border-color); color: var(--text-main);" data-i18n="btn_book_pkg">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq section-padding" id="faq">
+        <div class="container text-center">
+            <h2 class="section-title" data-i18n="sec_faq">Frequently Asked Questions</h2>
+            <p class="section-subtitle" data-i18n="sec_faq_sub">Everything you need to know about our mobile detailing process.</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq_1_q">Do you come to my house? Do you need water or power?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner" data-i18n="faq_1_a">
+                            Yes! We are a 100% mobile detailing service. We bring all the necessary premium products and equipment to your driveway or workplace. Depending on your location (e.g., a condo building vs. a detached home), we may require access to a water spigot and a standard electrical outlet. Please let us know your setup when booking!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq_2_q">How long does a full detail take?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner" data-i18n="faq_2_a">
+                            The duration depends heavily on the condition of your vehicle and the package selected. A standard Signature Detail typically takes 3 to 5 hours. High-end services like multi-stage Paint Correction or Ceramic Coating applications can take a full day or more to ensure perfection.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq_3_q">What makes a Ceramic Coating better than wax?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner" data-i18n="faq_3_a">
+                            Traditional carnauba wax sits on top of your paint and generally washes off within 1 to 3 months. Our 9H nano-ceramic coatings chemically bond with your vehicle's clear coat. This creates a semi-permanent, hardened shield that lasts for years, providing extreme resistance to chemicals, UV rays, road salt, and bird droppings while maintaining an incredible candy-like gloss.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq_4_q">What forms of payment do you accept?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner" data-i18n="faq_4_a">
+                            We accept Cash, E-Transfer, and major Credit Cards (Visa, MasterCard, Amex) upon completion of the service.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio section-padding" id="portfolio">
+        <div class="container text-center">
+            <h2 class="section-title" data-i18n="sec_portfolio">Our Recent Work</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://placehold.co/600x400/111C2E/38bdf8?text=McLaren+Detail" alt="McLaren Mobile Detailing Montreal">
+                    <div class="gallery-overlay"><h4 data-i18n="gal_1">Supercar Detailing</h4></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/600x400/111C2E/F25C05?text=Paint+Correction" alt="Before and After Paint Correction">
+                    <div class="gallery-overlay"><h4 data-i18n="gal_2">Paint Correction</h4></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/600x400/111C2E/38bdf8?text=Ceramic+Coating" alt="9H Ceramic Coating Application">
+                    <div class="gallery-overlay"><h4 data-i18n="gal_3">Ceramic Coating</h4></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/600x400/111C2E/F25C05?text=Interior+Deep+Clean" alt="Car Interior Steam Cleaning">
+                    <div class="gallery-overlay"><h4 data-i18n="gal_4">Interior Deep Clean</h4></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dedicated SEO Content Section -->
+    <section class="seo-content section-padding">
+        <div class="container text-center">
+            <div class="seo-text-block">
+                <h2 style="font-size: 2rem; margin-bottom: 1.5rem;" data-i18n="seo_heading">Montreal's Premier Mobile Auto Detailing Experience</h2>
+                <p data-i18n="seo_p1">Finding a reliable, high-end <strong>car detailing service in Montreal</strong> shouldn't be a hassle. At Soapy Solutions, we eliminate the inconvenience of traditional car washes by bringing our fully equipped mobile detailing unit directly to your home or office. Serving the Greater Montreal Area, including <strong>Dorval, Vaudreuil, and the West Island</strong>, we specialize in luxury vehicle care.</p>
+                <p data-i18n="seo_p2">As the official mobile detailers for McLaren Montreal, we understand the precision required to handle exotic and luxury vehicles. Whether you need a deep interior steam clean to remove stubborn winter salt stains, a multi-stage <strong>paint correction</strong> to remove swirl marks, or a professional <strong>ceramic coating</strong> application to protect your investment, our meticulous approach ensures showroom-quality results every single time.</p>
+                <p data-i18n="seo_p3">Don't settle for automated washes that scratch your clear coat. Trust the experts at Soapy Solutions. <em>Where every detail counts.</em></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div>
+                    <h2 class="section-title left-title" style="text-align: left;" data-i18n="sec_contact">Book Your Detail</h2>
+                    <p style="margin-bottom: 3rem; color: var(--text-muted);" data-i18n="contact_desc">Ready to restore your vehicle to showroom condition? Send us a message or DM us on Instagram to schedule your mobile service.</p>
+                    
+                    <div class="contact-info-block">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="contact-info-content">
+                            <h4 data-i18n="contact_phone">Phone / Mobile</h4>
+                            <a href="tel:4385223788">(438) 522-3788</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-block">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-info-content">
+                            <h4 data-i18n="contact_email">Email</h4>
+                            <a href="mailto:info.soapysolutions@gmail.com">info.soapysolutions@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-block">
+                        <i class="fas fa-location-dot"></i>
+                        <div class="contact-info-content">
+                            <h4 data-i18n="contact_address">Address</h4>
+                            <p>565 Marshall Avenue<br>Dorval, QC H9S 5W4</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-block">
+                        <i class="fab fa-instagram"></i>
+                        <div class="contact-info-content">
+                            <h4 data-i18n="contact_social">Instagram</h4>
+                            <a href="https://instagram.com/soapysolutionsmtl" target="_blank">@soapysolutionsmtl</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form onsubmit="event.preventDefault();">
+                        <div class="form-group">
+                            <label for="name" data-i18n="form_name">Full Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" data-i18n="form_phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service" data-i18n="form_service">Service Needed</label>
+                            <select id="service" class="form-control">
+                                <option value="full" data-i18n="opt_full">Full Mobile Detail</option>
+                                <option value="interior" data-i18n="opt_int">Interior Deep Clean</option>
+                                <option value="exterior" data-i18n="opt_ext">Paint Correction</option>
+                                <option value="ceramic" data-i18n="opt_cer">Ceramic Coating</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-i18n="form_msg">Vehicle Make/Model & Inquiries</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="btn_submit">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="#home" class="logo smooth-scroll" style="margin-bottom: 1rem;">
+                        <span class="logo-soapy">SOAPY</span><span class="logo-solutions">SOLUTIONS</span>
+                    </a>
+                    <p class="footer-text" data-i18n="footer_desc">Montreal Mobile Car Detailing Service. Paint Corrections, Ceramic Coatings. Where every detail counts. Official mobile detailers of McLaren Montreal.</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/soapysolutionsmtl" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@soapysolutions24" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer_quick">Quick Links</h4>
+                    <ul>
+                        <li><a href="#home" class="smooth-scroll" data-i18n="nav_home">Home</a></li>
+                        <li><a href="#services" class="smooth-scroll" data-i18n="nav_services">Services</a></li>
+                        <li><a href="#packages" class="smooth-scroll" data-i18n="nav_packages">Packages</a></li>
+                        <li><a href="#faq" class="smooth-scroll" data-i18n="nav_faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer_contact">Contact</h4>
+                    <ul>
+                        <li><a href="tel:4385223788">(438) 522-3788</a></li>
+                        <li><a href="mailto:info.soapysolutions@gmail.com">info.soapysolutions@gmail.com</a></li>
+                        <li>565 Marshall Avenue<br>Dorval, QC H9S 5W4</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; <span id="year"></span> Soapy Solutions. <span data-i18n="footer_rights">All Rights Reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vanilla JavaScript -->
+    <script>
+        // Set Current Year in Footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Sticky Navbar Shadow
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.style.boxShadow = 'var(--shadow)';
+            } else {
+                header.style.boxShadow = 'none';
+            }
+        });
+
+        // Custom Smooth Scroll Engine
+        document.querySelectorAll('a.smooth-scroll').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault(); 
+                const targetId = this.getAttribute('href');
+                if (targetId === '#' || targetId === '') return;
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    const headerOffset = 90; 
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+                }
+            });
+        });
+
+        // FAQ Accordion Logic
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                
+                // Close all other open items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if(item !== faqItem) item.classList.remove('active');
+                });
+
+                // Toggle current item
+                faqItem.classList.toggle('active');
+            });
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            if(navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        document.querySelectorAll('.nav-links a.nav-item, .mobile-only-btn').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.querySelector('i').classList.replace('fa-times', 'fa-bars');
+            });
+        });
+
+        // Theme Toggle Logic
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', (e) => {
+            e.stopPropagation(); 
+            if (body.getAttribute('data-theme') === 'dark') {
+                body.setAttribute('data-theme', 'light');
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+            }
+        });
+
+        // Internationalization (i18n) Logic
+        const langToggle = document.getElementById('langToggle');
+        let currentLang = 'en';
+
+        const translations = {
+            en: {
+                nav_home: "Home",
+                nav_services: "Services",
+                nav_packages: "Packages",
+                nav_portfolio: "Portfolio",
+                nav_faq: "FAQ",
+                nav_contact: "Contact",
+                btn_call: "<i class='fas fa-phone'></i> CALL NOW",
+                hero_badge: "Official Mobile Detailers of McLaren Montreal",
+                hero_title: "WHERE EVERY DETAIL <br><span class='accent-text'>COUNTS.</span>",
+                hero_subtitle: "Montreal Mobile Car Detailing Service",
+                hero_desc: "Specializing in multi-stage paint corrections, professional ceramic coatings, and ultra high-end mobile detailing brought directly to your driveway.",
+                btn_quote: "BOOK NOW",
+                btn_work: "VIEW PACKAGES",
+                trust_paint: "Paint Correction",
+                trust_ceramic: "Ceramic Coatings",
+                trust_rated: "5-Star Rated",
+                trust_mobile: "Mobile Service",
+                sec_services: "Our Premium Detailing Services",
+                sec_services_sub: "We offer specialized, high-end automotive care packages designed to restore, protect, and maintain your vehicle's value using industry-leading products.",
+                
+                srv_1_title: "Ceramic Coating Protection",
+                srv_1_desc: "A semi-permanent layer of nano-ceramic quartz that bonds to your clear coat. It provides an extreme hydrophobic effect, unmatched gloss, and defense against Montreal's harsh elements.",
+                srv_1_f1: "Multi-year 9H hardness protection",
+                srv_1_f2: "Extreme water & dirt repellency",
+                srv_1_f3: "Protection against UV rays & oxidation",
+                srv_1_f4: "Deep, mirror-like candy gloss finish",
+                
+                srv_2_title: "Multi-Stage Paint Correction",
+                srv_2_desc: "Erase years of automatic car wash damage. Our meticulous compounding and polishing process safely removes defects from your clear coat to reveal a flawless finish.",
+                srv_2_f1: "Removal of swirl marks & holograms",
+                srv_2_f2: "Elimination of light to medium scratches",
+                srv_2_f3: "Restoration of faded or oxidized paint",
+                srv_2_f4: "Machine compounding and jewel polishing",
+                
+                srv_3_title: "Interior Deep Restoration",
+                srv_3_desc: "A complete reset for your cabin. We go far beyond standard vacuuming by utilizing commercial-grade steam cleaners and extractors to sanitize every crevice.",
+                srv_3_f1: "Hot water carpet & seat extraction",
+                srv_3_f2: "High-pressure steam cleaning & sanitization",
+                srv_3_f3: "Premium leather deep cleaning & conditioning",
+                srv_3_f4: "Odor neutralization and stain removal",
+
+                sec_packages: "Detailing Packages",
+                sec_packages_sub: "Transparent pricing for premium services. Contact us for a precise quote based on your vehicle's size and condition.",
+                pkg_1_name: "Maintenance Wash",
+                pkg_1_price: "From $150",
+                pkg_1_f1: "Foam cannon hand wash",
+                pkg_1_f2: "Wheel & tire deep clean",
+                pkg_1_f3: "Spray wax application",
+                pkg_1_f4: "Interior thorough vacuum",
+                pkg_1_f5: "Wipe down of all surfaces",
+                pkg_1_f6: "Streak-free window cleaning",
+                
+                pkg_pop: "Most Popular",
+                pkg_2_name: "Signature Detail",
+                pkg_2_price: "From $350",
+                pkg_2_f1: "Everything in Maintenance Wash",
+                pkg_2_f2: "Chemical iron decontamination",
+                pkg_2_f3: "Clay bar paint treatment",
+                pkg_2_f4: "6-Month Paint Sealant",
+                pkg_2_f5: "Interior deep steam clean",
+                pkg_2_f6: "Leather/Fabric conditioning",
+
+                pkg_3_name: "Showroom Reset",
+                pkg_3_price: "From $850",
+                pkg_3_f1: "Full exterior decontamination",
+                pkg_3_f2: "1-Step Paint Correction",
+                pkg_3_f3: "Ceramic Coating (2+ Years)",
+                pkg_3_f4: "Wheel face ceramic coating",
+                pkg_3_f5: "Complete interior detail",
+                pkg_3_f6: "Engine bay light detail",
+                btn_book_pkg: "Book Now",
+
+                sec_faq: "Frequently Asked Questions",
+                sec_faq_sub: "Everything you need to know about our mobile detailing process.",
+                faq_1_q: "Do you come to my house? Do you need water or power?",
+                faq_1_a: "Yes! We are a 100% mobile detailing service. We bring all the necessary premium products and equipment to your driveway or workplace. Depending on your location (e.g., a condo building vs. a detached home), we may require access to a water spigot and a standard electrical outlet. Please let us know your setup when booking!",
+                faq_2_q: "How long does a full detail take?",
+                faq_2_a: "The duration depends heavily on the condition of your vehicle and the package selected. A standard Signature Detail typically takes 3 to 5 hours. High-end services like multi-stage Paint Correction or Ceramic Coating applications can take a full day or more to ensure perfection.",
+                faq_3_q: "What makes a Ceramic Coating better than wax?",
+                faq_3_a: "Traditional carnauba wax sits on top of your paint and generally washes off within 1 to 3 months. Our 9H nano-ceramic coatings chemically bond with your vehicle's clear coat. This creates a semi-permanent, hardened shield that lasts for years, providing extreme resistance to chemicals, UV rays, road salt, and bird droppings while maintaining an incredible candy-like gloss.",
+                faq_4_q: "What forms of payment do you accept?",
+                faq_4_a: "We accept Cash, E-Transfer, and major Credit Cards (Visa, MasterCard, Amex) upon completion of the service.",
+
+                sec_portfolio: "Our Recent Work",
+                gal_1: "Supercar Detailing",
+                gal_2: "Paint Correction",
+                gal_3: "Ceramic Coating",
+                gal_4: "Interior Deep Clean",
+
+                seo_heading: "Montreal's Premier Mobile Auto Detailing Experience",
+                seo_p1: "Finding a reliable, high-end <strong>car detailing service in Montreal</strong> shouldn't be a hassle. At Soapy Solutions, we eliminate the inconvenience of traditional car washes by bringing our fully equipped mobile detailing unit directly to your home or office. Serving the Greater Montreal Area, including <strong>Dorval, Vaudreuil, and the West Island</strong>, we specialize in luxury vehicle care.",
+                seo_p2: "As the official mobile detailers for McLaren Montreal, we understand the precision required to handle exotic and luxury vehicles. Whether you need a deep interior steam clean to remove stubborn winter salt stains, a multi-stage <strong>paint correction</strong> to remove swirl marks, or a professional <strong>ceramic coating</strong> application to protect your investment, our meticulous approach ensures showroom-quality results every single time.",
+                seo_p3: "Don't settle for automated washes that scratch your clear coat. Trust the experts at Soapy Solutions. <em>Where every detail counts.</em>",
+
+                sec_contact: "Book Your Detail",
+                contact_desc: "Ready to restore your vehicle to showroom condition? Send us a message or DM us on Instagram to schedule your mobile service.",
+                contact_phone: "Phone / Mobile",
+                contact_email: "Email",
+                contact_address: "Address",
+                contact_social: "Instagram",
+                form_name: "Full Name",
+                form_phone: "Phone Number",
+                form_service: "Service Needed",
+                opt_full: "Full Mobile Detail",
+                opt_int: "Interior Deep Clean",
+                opt_ext: "Paint Correction",
+                opt_cer: "Ceramic Coating",
+                form_msg: "Vehicle Make/Model & Inquiries",
+                btn_submit: "SEND MESSAGE",
+                footer_desc: "Montreal Mobile Car Detailing Service. Paint Corrections, Ceramic Coatings. Where every detail counts. Official mobile detailers of McLaren Montreal.",
+                footer_quick: "Quick Links",
+                footer_contact: "Contact Info",
+                footer_rights: "All Rights Reserved."
+            },
+            fr: {
+                nav_home: "Accueil",
+                nav_services: "Services",
+                nav_packages: "Forfaits",
+                nav_portfolio: "Réalisations",
+                nav_faq: "FAQ",
+                nav_contact: "Contact",
+                btn_call: "<i class='fas fa-phone'></i> APPELEZ",
+                hero_badge: "Détailleurs Mobiles Officiels de McLaren Montréal",
+                hero_title: "OÙ CHAQUE DÉTAIL <br><span class='accent-text'>COMPTE.</span>",
+                hero_subtitle: "Service d'Esthétique Automobile Mobile de Montréal",
+                hero_desc: "Spécialisés dans la correction de peinture en plusieurs étapes, les revêtements céramiques professionnels et l'esthétique mobile ultra haut de gamme directement chez vous.",
+                btn_quote: "RÉSERVER",
+                btn_work: "VOIR LES FORFAITS",
+                trust_paint: "Correction Peinture",
+                trust_ceramic: "Revêtement Céramique",
+                trust_rated: "Évalué 5 Étoiles",
+                trust_mobile: "Service Mobile",
+                sec_services: "Nos Services d'Esthétique Premium",
+                sec_services_sub: "Nous offrons des forfaits spécialisés conçus pour restaurer, protéger et maintenir la valeur de votre véhicule en utilisant des produits de pointe.",
+                
+                srv_1_title: "Protection Revêtement Céramique",
+                srv_1_desc: "Une couche semi-permanente de quartz nano-céramique qui adhère à votre peinture. Offre un effet hydrophobe extrême, une brillance inégalée et une défense contre le climat de Montréal.",
+                srv_1_f1: "Protection de dureté 9H sur plusieurs années",
+                srv_1_f2: "Répulsif extrême contre l'eau et la saleté",
+                srv_1_f3: "Protection contre les rayons UV et l'oxydation",
+                srv_1_f4: "Finition miroir ultra brillante",
+                
+                srv_2_title: "Correction de Peinture Multi-Étapes",
+                srv_2_desc: "Effacez les années de dommages causés par les lave-autos. Notre processus méticuleux élimine en toute sécurité les défauts de votre vernis pour révéler une finition parfaite.",
+                srv_2_f1: "Élimination des tourbillons et hologrammes",
+                srv_2_f2: "Suppression des rayures légères à moyennes",
+                srv_2_f3: "Restauration de la peinture fanée ou oxydée",
+                srv_2_f4: "Polissage à la machine de haute précision",
+                
+                srv_3_title: "Restauration Intérieure Profonde",
+                srv_3_desc: "Une réinitialisation complète de votre habitacle. Nous allons au-delà de l'aspirateur en utilisant des nettoyeurs vapeur et des extracteurs commerciaux pour tout désinfecter.",
+                srv_3_f1: "Extraction à l'eau chaude (tapis et sièges)",
+                srv_3_f2: "Nettoyage et désinfection à la vapeur haute pression",
+                srv_3_f3: "Traitement et conditionnement du cuir",
+                srv_3_f4: "Neutralisation des odeurs et retrait des taches",
+
+                sec_packages: "Nos Forfaits",
+                sec_packages_sub: "Des prix transparents pour des services haut de gamme. Contactez-nous pour une soumission précise.",
+                pkg_1_name: "Lavage Entretien",
+                pkg_1_price: "Dès 150$",
+                pkg_1_f1: "Lavage à la main au canon à mousse",
+                pkg_1_f2: "Nettoyage des jantes et pneus",
+                pkg_1_f3: "Application de cire en vaporisateur",
+                pkg_1_f4: "Aspirateur intérieur complet",
+                pkg_1_f5: "Essuyage de toutes les surfaces",
+                pkg_1_f6: "Nettoyage des vitres sans traces",
+                
+                pkg_pop: "Le Plus Populaire",
+                pkg_2_name: "L'Esthétique Signature",
+                pkg_2_price: "Dès 350$",
+                pkg_2_f1: "Tout inclus dans Lavage Entretien",
+                pkg_2_f2: "Décontamination chimique (fer)",
+                pkg_2_f3: "Traitement à la barre d'argile",
+                pkg_2_f4: "Scellant à peinture (6 mois)",
+                pkg_2_f5: "Nettoyage intérieur vapeur",
+                pkg_2_f6: "Traitement cuir et tissus",
+
+                pkg_3_name: "Restauration Salle de Montre",
+                pkg_3_price: "Dès 850$",
+                pkg_3_f1: "Décontamination extérieure complète",
+                pkg_3_f2: "Correction peinture 1-Étape",
+                pkg_3_f3: "Revêtement Céramique (2+ Ans)",
+                pkg_3_f4: "Céramique sur les jantes",
+                pkg_3_f5: "Esthétique intérieure complète",
+                pkg_3_f6: "Nettoyage léger compartiment moteur",
+                btn_book_pkg: "Réserver",
+
+                sec_faq: "Foire Aux Questions",
+                sec_faq_sub: "Tout ce que vous devez savoir sur notre processus d'esthétique mobile.",
+                faq_1_q: "Venez-vous à domicile? Avez-vous besoin d'eau ou d'électricité?",
+                faq_1_a: "Oui! Nous sommes un service 100% mobile. Selon votre emplacement (ex. condo vs maison), nous pouvons avoir besoin d'un accès à un robinet d'eau et une prise électrique standard. Veuillez nous informer de votre configuration lors de la réservation!",
+                faq_2_q: "Combien de temps dure un nettoyage complet?",
+                faq_2_a: "La durée dépend de l'état de votre véhicule. L'Esthétique Signature prend généralement 3 à 5 heures. Les services haut de gamme comme la correction de peinture ou la céramique peuvent prendre une journée complète.",
+                faq_3_q: "Pourquoi la Céramique est-elle meilleure que la cire?",
+                faq_3_a: "La cire traditionnelle disparaît après 1 à 3 mois. Nos revêtements nano-céramiques 9H se lient chimiquement à votre vernis, créant un bouclier semi-permanent qui dure des années et résiste aux produits chimiques, aux UV et au sel de route.",
+                faq_4_q: "Quels modes de paiement acceptez-vous?",
+                faq_4_a: "Nous acceptons l'Argent comptant, le Virement Interac et les Cartes de crédit (Visa, MasterCard, Amex) une fois le service complété.",
+
+                sec_portfolio: "Nos Récents Projets",
+                gal_1: "Esthétique Supercar",
+                gal_2: "Correction de Peinture",
+                gal_3: "Revêtement Céramique",
+                gal_4: "Nettoyage Intérieur",
+
+                seo_heading: "L'Expérience Ultime en Esthétique Automobile à Montréal",
+                seo_p1: "Trouver un service de <strong>nettoyage automobile haut de gamme à Montréal</strong> ne devrait pas être compliqué. Chez Soapy Solutions, nous apportons notre unité mobile entièrement équipée directement chez vous ou à votre bureau. Desservant la grande région de Montréal, incluant <strong>Dorval, Vaudreuil et l'Ouest-de-l'Île</strong>.",
+                seo_p2: "En tant que détailleurs mobiles officiels pour McLaren Montréal, nous comprenons la précision requise. Que vous ayez besoin d'un nettoyage intérieur à la vapeur pour enlever le sel d'hiver, d'une <strong>correction de peinture</strong> ou d'un <strong>revêtement céramique</strong>, notre approche garantit des résultats impeccables.",
+                seo_p3: "Ne vous contentez pas des lavages automatisés qui abîment votre peinture. Faites confiance aux experts de Soapy Solutions. <em>Où chaque détail compte.</em>",
+
+                sec_contact: "Réservez Votre Service",
+                contact_desc: "Prêt à restaurer votre véhicule à l'état neuf? Envoyez-nous un message ou un DM sur Instagram pour planifier votre service.",
+                contact_phone: "Téléphone / Mobile",
+                contact_email: "Courriel",
+                contact_address: "Adresse",
+                contact_social: "Instagram",
+                form_name: "Nom Complet",
+                form_phone: "Numéro de Téléphone",
+                form_service: "Service Requis",
+                opt_full: "Esthétique Mobile Complète",
+                opt_int: "Nettoyage Intérieur",
+                opt_ext: "Correction de Peinture",
+                opt_cer: "Revêtement Céramique",
+                form_msg: "Marque/Modèle du Véhicule & Message",
+                btn_submit: "ENVOYER LE MESSAGE",
+                footer_desc: "Service d'esthétique automobile mobile de Montréal. Corrections de peinture, revêtements céramiques. Où chaque détail compte. Détailleurs mobiles officiels de McLaren Montréal.",
+                footer_quick: "Liens Rapides",
+                footer_contact: "Coordonnées",
+                footer_rights: "Tous Droits Réservés."
+            }
+        };
+
+        langToggle.addEventListener('click', (e) => {
+            e.stopPropagation(); 
+            currentLang = currentLang === 'en' ? 'fr' : 'en';
+            langToggle.textContent = currentLang === 'en' ? 'FR' : 'EN';
+            
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[currentLang][key]) {
+                    el.innerHTML = translations[currentLang][key];
+                }
+            });
+        });
+    </script>
+</body>
+</html>
